@@ -1,0 +1,288 @@
+<!-- BEGIN: main -->
+<!-- BEGIN: css_reset -->
+ * {
+    margin: 0;
+    padding: 0;
+}
+<!-- END: css_reset -->
+
+body {
+    font: 12px / 18px Arial, Tahoma, Verdana, sans-serif;
+<!-- BEGIN: pageFixed_body -->
+	width: 100%;
+<!-- END: pageFixed_body -->
+}
+
+a {
+    color: {THEME_CSS.aColor};
+}
+a:hover {
+    color: #{THEME_CSS.aHoverColor};
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#wrapper {
+<!-- BEGIN: pageFull_wrapper -->
+	min-width: {THEME_CSS.min_width}px;
+	max-width: {THEME_CSS.max_width}px;
+<!-- END: pageFull_wrapper -->
+<!-- BEGIN: pageFixed_wrapper -->
+    width: {THEME_CSS.pageWidthValue}px;
+<!-- END: pageFixed_wrapper -->
+    margin: 0 {THEME_CSS.pageAlign};
+}
+
+/* ------------------ Header ------------------*/
+#header {
+    height: {THEME_CSS.headerHeight}px;
+    background: #{THEME_CSS.headerBgColor};
+}
+
+/* ------------------ Navigation ------------------*/
+#navigation {
+    height: {THEME_CSS.horizontalMenuHeight}px;
+    background: #{THEME_CSS.horizontalMenuBgColor};
+}
+
+<!-- BEGIN: left_body_right -->
+/* ------------------ left_body_right Middle ------------------*/
+#middle_lbr {
+    border-left: {THEME_CSS.leftSidebarWidth}px solid #{THEME_CSS.leftSidebarBgColor};
+    border-right: {THEME_CSS.rightSidebarWidth}px solid #{THEME_CSS.rightSidebarBgColor};
+    height: 1%;
+    position: relative;
+}
+
+#middle_lbr:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+#container_lbr {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    margin-right: -100%;
+}
+
+#content_lbr {
+    padding: 0 10px;
+}
+
+/* ------------------ left_body_right Sidebar Left ----------------*/
+#sideLeft_lbr {
+    float: left;
+    width: {THEME_CSS.leftSidebarWidth}px;
+    position: relative;
+    background: #{THEME_CSS.leftSidebarBgColor};
+    left: -{THEME_CSS.leftSidebarWidth}px;
+}
+
+/* ------------------ left_body_right Sidebar Right ------------------*/
+#sideRight_lbr {
+    float: right;
+    margin-right: -{THEME_CSS.rightSidebarWidth}px;
+    width: {THEME_CSS.rightSidebarWidth}px;
+    position: relative;
+    background: #{THEME_CSS.rightSidebarBgColor};
+}
+<!-- END: left_body_right -->
+
+<!-- BEGIN: left_right_body -->
+/* ------------------ left_right_body Middle ------------------*/
+#middle_lrb {
+	height: 1%;
+	position: relative;
+	background: #{THEME_CSS.leftSidebarBgColor};
+}
+#container_lrb {
+	background: #FFF;
+	height: 1%;
+	margin-left: {THEME_CSS.leftSidebarWidth}px;
+	border-left: {THEME_CSS.rightSidebarWidth}px solid #{THEME_CSS.rightSidebarBgColor};
+}
+#container_lrb:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#content_lrb {
+	float: left;
+	width: 100%;
+	margin-right: -100%;
+	position: relative;
+	overflow: hidden;
+}
+
+
+/* ------------------ Sidebar Left ------------------*/
+#sideLeft_lrb {
+	float: left;
+	width: {THEME_CSS.leftSidebarWidth}px;
+	margin-right: -100%;
+	left: -{THEME_CSS.leftrightSidebarWidth}px;
+	position: relative;
+	background: #{THEME_CSS.leftSidebarBgColor};
+}
+
+
+/* ------------------ Sidebar Right ------------------*/
+#sideRight_lrb {
+	float: left;
+	width: {THEME_CSS.rightSidebarWidth}px;
+	left: -{THEME_CSS.rightSidebarWidth}px;
+	position: relative;
+	background: #{THEME_CSS.rightSidebarBgColor};
+	margin-right: -3px;
+}
+
+<!-- END: left_right_body -->
+
+<!-- BEGIN: body_left_right -->
+/* ------------------ body_left_right Middle ------------------*/
+#middle_blr {
+	height: 1%;
+	position: relative;
+	background: #{THEME_CSS.rightSidebarBgColor};
+}
+#container_blr {
+	background: #FFF;
+	height: 1%;
+	margin-right: {THEME_CSS.rightSidebarWidth}px;
+	border-right: {THEME_CSS.leftSidebarWidth}px solid #{THEME_CSS.leftSidebarBgColor};
+}
+#container_blr:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#content_blr {
+	float: left;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+/* ------------------ body_left_right Sidebar Left ------------------*/
+#sideLeft_blr {
+	float: right;
+	margin-right: -{THEME_CSS.leftSidebarWidth}px;
+	width: {THEME_CSS.leftSidebarWidth}px;
+	position: relative;
+	background: #{THEME_CSS.leftSidebarBgColor};
+}
+
+/* ------------------ body_left_right Sidebar Right ------------------*/
+#sideRight_blr {
+	float: right;
+	margin-right: -{THEME_CSS.rightSidebarWidth}px;
+	right: -{THEME_CSS.leftSidebarWidth}px;
+	width: {THEME_CSS.rightSidebarWidth}px;
+	position: relative;
+	background: #{THEME_CSS.rightSidebarBgColor};
+}
+<!-- END: body_left_right -->
+
+<!-- BEGIN: left_body -->
+/* ------------------ left_body Middle ------------------*/
+#middle_lb {
+	border-left: {THEME_CSS.leftSidebarWidth}px solid #{THEME_CSS.leftSidebarBgColor};
+	height: 1%;
+	position: relative;
+}
+#middle_lb:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#container_lb {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-right: -100%;
+}
+#content_lb {
+	padding: 0 10px;
+}
+
+/* ------------------ left_body Sidebar Left ------------------*/
+#sideLeft_lb {
+	float: left;
+	width: {THEME_CSS.leftSidebarWidth}px;
+	position: relative;
+	background: #{THEME_CSS.leftSidebarBgColor};
+	left: -{THEME_CSS.leftSidebarWidth}px;
+}
+<!-- END: left_body -->
+
+<!-- BEGIN: body_right -->
+/* ------------------ body_right Middle ------------------*/
+#middle_br {
+	border-right: {THEME_CSS.rightSidebarWidth}px solid #{THEME_CSS.rightSidebarBgColor};
+	height: 1%;
+	position: relative;
+}
+#middle_br:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#container_br {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-right: -100%;
+}
+#content_br {
+	padding: 0 10px;
+}
+
+/* ------------------ body_right Sidebar Right ------------------*/
+#sideRight_br {
+	float: right;
+	margin-right: -{THEME_CSS.rightSidebarWidth}px;
+	width: {THEME_CSS.rightSidebarWidth}px;
+	position: relative;
+	background: #{THEME_CSS.rightSidebarBgColor};
+}
+<!-- END: body_right -->
+
+/*------------------ Footer------------------*/
+#footer {
+    height: {THEME_CSS.footerHeight}px;
+    background: #{THEME_CSS.footerBgColor};
+}
+/* ------------------ END SETTING LAYOUT ------------------*/
+
+<!-- END: main -->

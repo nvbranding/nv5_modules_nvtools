@@ -1,0 +1,105 @@
+﻿/**
+ * @Project NUKEVIET 4.x
+ * @Author VINADES.,JSC (contact@vinades.vn)
+ * @Copyright (C) 2014 VINADES.,JSC. All rights reserved
+ * @License: Not free read more http://nukeviet.vn/vi/store/modules/nvtools/
+ * @Createdate 31/05/2010, 00:36
+ */
+
+table.table td label {
+    font-weight: 400;
+    margin: 0;
+}
+table.table td [type="checkbox"] {
+    margin-top: 0;
+}
+.w300 {
+    width: 300px!important;
+}
+.d-inline-block {
+    display: inline-block!important;
+}
+#nvtools_module .form-control {
+    display: inline-block!important;
+}
+.hidden {
+    display: none;
+}
+.help-block-top {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: italic;
+}
+/*
+ * Copy theme
+ */
+#themecopypre, #themecopydata, #themecopyload{
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important;
+}
+#contentdata, #contentajax, #contentloader, #contentsubmit{
+	display: inline-block;
+}
+#themecopyload, #contentloader, #contentsubmit{
+	display:none;
+}
+.theme-select-button{
+	display:inline-block;
+}
+.theme-select-list{
+	width: 269px;
+}
+.theme-select-list a{
+	font-size:16px;
+}
+.layout-icon{
+	display:inline-block;
+	width:150px;
+	height:100px;
+	background-position:center top;
+	background-repeat:repeat-y;
+	background-color:#f7f7f7;
+}
+.layout-body, .layout-main{
+	background-image:url('../images/nvtools/body.png');
+}
+.layout-body-right, .layout-main-right{
+	background-image:url('../images/nvtools/body-right.png');
+}
+.layout-body-left-right, .layout-main-left-right{
+	background-image:url('../images/nvtools/body-left-right.png');
+}
+.layout-left-body, .layout-left-main{
+	background-image:url('../images/nvtools/left-body.png');
+}
+.layout-left-body-right, .layout-left-main-right{
+	background-image:url('../images/nvtools/left-body-right.png');
+}
+.layout-left-right-body, .layout-left-right-main{
+	background-image:url('../images/nvtools/left-right-body.png');
+}
+.module-item{
+}
+input[type="checkbox"].half:before{
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	font: normal 10px/1 'FontAwesome';
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: '\f0c8';
+	margin: 2px;
+	color: #1e8cbe;
+}
+.module-data{
+	padding-left:30px;
+}
+.module-data p{
+	padding-left:30px;
+}
+.module-item label{
+	font-weight:normal;
+}

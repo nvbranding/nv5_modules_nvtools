@@ -1,0 +1,176 @@
+<!-- BEGIN: main -->
+<!-- BEGIN: css_reset -->
+ * {
+    margin: 0;
+    padding: 0;
+}
+<!-- END: css_reset -->
+html {
+    height: 100%;
+}
+body {
+    font: 12px / 18px Arial, Tahoma, Verdana, sans-serif;
+    <!-- BEGIN: pageFixed_body -->
+	width: 100%;
+    <!-- END: pageFixed_body -->
+	height: 100%;
+}
+
+a {
+    color: {THEME_CSS.aColor};
+}
+a:hover {
+    color: #{THEME_CSS.aHoverColor};
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#wrapper {
+<!-- BEGIN: pageFull_wrapper -->
+	min-width: {THEME_CSS.min_width}px;
+	max-width: {THEME_CSS.max_width}px;
+<!-- END: pageFull_wrapper -->
+<!-- BEGIN: pageFixed_wrapper -->
+    width: {THEME_CSS.pageWidthValue}px;
+<!-- END: pageFixed_wrapper -->
+    margin: 0 {THEME_CSS.pageAlign};
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+/* Header -----------------------------------------*/
+#header {
+    height: {THEME_CSS.headerHeight}px;
+    background: #{THEME_CSS.headerBgColor};
+}
+
+/* Navigation -----------------------------------------*/
+#navigation {
+    height: {THEME_CSS.horizontalMenuHeight}px;
+    background: #{THEME_CSS.horizontalMenuBgColor};
+}
+
+/* Middle -----------------------------------------*/
+#middle {
+    width: 100%;
+    padding: 0 0 {THEME_CSS.footerHeight}px;
+    height: 1%;
+    position: relative;
+}
+
+#middle:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+#container {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+<!-- BEGIN: left_body_right -->
+#content {
+    padding: 0 {THEME_CSS.rightSidebarWidth}px 0 {THEME_CSS.leftSidebarWidth}px;
+}
+<!-- END: left_body_right -->
+
+<!-- BEGIN: left_body -->
+#content_lb {
+    padding: 0 0 0 {THEME_CSS.leftSidebarWidth}px;
+}
+<!-- END: left_body -->
+
+<!-- BEGIN: body_right -->
+#content_br{
+    padding: 0 {THEME_CSS.rightSidebarWidth}px 0 0;
+}
+<!-- END: body_right -->
+
+<!-- BEGIN: left_right_body -->
+#content_lrb {
+    padding: 0 0 0 {THEME_CSS.leftrightSidebarWidth}px;
+}
+#sideRight_lrb {
+    float: left;
+    margin-right: -3px;
+    width: {THEME_CSS.rightSidebarWidth}px;
+    margin-left: -100%;
+    left: {THEME_CSS.leftSidebarWidth}px;
+    position: relative;
+    background: #{THEME_CSS.rightSidebarBgColor};
+}
+<!-- END: left_right_body -->
+
+<!-- BEGIN: body_left_right -->
+#content_blr {
+    padding: 0 {THEME_CSS.leftrightSidebarWidth}px 0 0;
+}
+#sideLeft_blr {
+    float: left;
+    width: {THEME_CSS.leftSidebarWidth}px;
+    margin-left: -{THEME_CSS.leftrightSidebarWidth}px;
+    position: relative;
+    background: #{THEME_CSS.leftSidebarBgColor};
+}
+<!-- END: body_left_right -->
+
+/* Sidebar Left -----------------------------------------*/
+#sideLeft {
+    float: left;
+    width: {THEME_CSS.leftSidebarWidth}px;
+    margin-left: -100%;
+    position: relative;
+    background: #{THEME_CSS.leftSidebarBgColor};
+}
+
+/* Sidebar Right -----------------------------------------*/
+#sideRight {
+    float: left;
+    margin-right: -3px;
+    width: {THEME_CSS.rightSidebarWidth}px;
+    margin-left: -{THEME_CSS.rightSidebarWidth}px;
+    position: relative;
+    background: #{THEME_CSS.rightSidebarBgColor};
+}
+
+/* Footer -----------------------------------------*/
+#footer {
+    margin: -{THEME_CSS.footerHeight}px {THEME_CSS.pageAlign} 0;
+<!-- BEGIN: pageFixed_footer -->
+    width: {THEME_CSS.pageWidthValue}px;
+<!-- END: pageFixed_footer -->
+<!-- BEGIN: pageFull_footer -->
+	min-width: {THEME_CSS.min_width}px;
+	max-width: {THEME_CSS.max_width}px;
+<!-- END: pageFull_footer -->
+    height: {THEME_CSS.footerHeight}px;
+    background: #{THEME_CSS.footerBgColor};
+}
+
+/* ------------------ END SETTING LAYOUT ------------------*/
+
+<!-- END: main -->
